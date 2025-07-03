@@ -1,0 +1,28 @@
+{
+  "repositories": [
+    {
+      "repo_url": "https://github.com/BeyondDimension/SteamTools",
+      "since": "2023-01-01",
+      "to": "2023-12-31",
+      "only_in_branch": "main",
+      "skip_empty_dmm": true
+    },
+    {
+      "repo_url": "https://github.com/apache/flink",
+      "only_modifications_with_file_types": [
+        ".java",
+        ".xml"
+      ],
+      "skip_empty_dmm": true
+    },
+    {
+      "repo_url": "https://github.com/apache/spark",
+      "since": "2023-06-01",
+      "only_modifications_with_file_types": [
+        ".scala",
+        ".java"
+      ],
+      "skip_empty_dmm": false
+    }
+  ]
+}

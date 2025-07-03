@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitAnalytics Analysis Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        .summary {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .metric {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            min-width: 120px;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+        }
+        .metric-label {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .chart {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .chart img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .info {
+            background-color: #d5e8d4;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitAnalytics Analysis Report</h1>
+        
+        <div class="info">
+            <strong>Repository:</strong> Unknown<br>
+            <strong>Analysis Time:</strong> 2025-06-14 15:37:02
+        </div>
+        
+        
+        <h2>🔍 Code Quality Analysis</h2>
+            <div class="chart">
+                <h3>DMM Code Quality Metrics</h3>
+                <img src="charts/dmm_analysis.png" alt="DMM Analysis">
+            </div>
+            
+            <div class="chart">
+                <h3>代码质量分数分布</h3>
+                <img src="charts/quality_score_distribution.png" alt="质量分数分布">
+            </div>
+            
+                <div class="info">
+                    <strong>整体质量评分:</strong> 0.419 / 1.000<br>
+                    <strong>中位数评分:</strong> 0.333
+                </div>
+                
+        <h2>🎯 聚类分析</h2>
+            <div class="chart">
+                <h3>降维分析结果</h3>
+                <img src="charts/dimensionality_reduction.png" alt="降维分析">
+            </div>
+            
+            <div class="chart">
+                <h3>K-means聚类分析</h3>
+                <img src="charts/kmeans_silhouette.png" alt="K-means聚类">
+            </div>
+            
+        <h2>🔗 文件关联分析</h2>
+        <h2>🤖 机器学习分析</h2><h3>DMM回归分析</h3>
+            <table>
+                <tr>
+                    <th>模型</th>
+                    <th>准确率/R²</th>
+                    <th>精确率</th>
+                    <th>召回率</th>
+                    <th>F1分数</th>
+                </tr>
+            
+                        <tr>
+                            <td>dmm_unit_size</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>dmm_unit_complexity</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>dmm_unit_interfacing</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        </table><h3>DMM分类分析</h3>
+            <table>
+                <tr>
+                    <th>模型</th>
+                    <th>准确率/R²</th>
+                    <th>精确率</th>
+                    <th>召回率</th>
+                    <th>F1分数</th>
+                </tr>
+            
+                        <tr>
+                            <td>dmm_unit_complexity_classification</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        </table><h3>文件类型预测</h3>
+            <table>
+                <tr>
+                    <th>模型</th>
+                    <th>准确率/R²</th>
+                    <th>精确率</th>
+                    <th>召回率</th>
+                    <th>F1分数</th>
+                </tr>
+            
+                <tr>
+                    <td colspan="5" style="text-align: center; color: #666;">暂无可用的模型结果</td>
+                </tr>
+                </table><h3>变更类型预测</h3>
+            <table>
+                <tr>
+                    <th>模型</th>
+                    <th>准确率/R²</th>
+                    <th>精确率</th>
+                    <th>召回率</th>
+                    <th>F1分数</th>
+                </tr>
+            
+                <tr>
+                    <td colspan="5" style="text-align: center; color: #666;">暂无可用的模型结果</td>
+                </tr>
+                </table>
+        
+        <h2>📊 Data Overview</h2>
+        <p>This report was generated using the GitAnalytics framework, providing comprehensive Git repository analysis results.</p>
+        
+    </div>
+</body>
+</html>
+        
